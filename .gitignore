@@ -1,0 +1,22 @@
+# Node.js
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+
+# Environment variables
+.env
+
+# Credentials (never commit service account JSON)
+cropic-prototype-*.json
+
+# Uploads (runtime generated files)
+uploads/

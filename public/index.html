@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="styles.css" />
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+     <!--  -->
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+     <section id="sec-1">
+          <div class="s1cont1">
+               <div class="s1item1-6">
+                    <span class="s1item1-6-1"></span>
+                    <span class="s1item1-6-2"></span>
+                    <span class="s1item1-6-3"></span>
+                    <span class="s1item1-6-4"></span>
+               </div>
+               <label class="s1item1-1">
+                    <span class="s1item1-1-1">Smart India Hackathon 2025
+                    </span>
+               </label>
+               <h1 class="s1item1-2">CROPIC Prototype</h1>
+               <div class="s1item1-3">AI-powered crop damage analytics for PMFBY</div>
+               <p class="s1item1-4">Real-time, geo-tagged crop image analysis using advanced AI/ML to revolutionize crop
+                    insurance <br>claims processing</p>
+               <div class="s1item1-5">
+                    <!-- <span class="s1item1-5-1">Try Demo &nbsp;<i class="fa-solid fa-play" id="fa-solid-1"></i></span> -->
+                     <a class="s1item1-5-1" href="#sec-6">Try Demo &nbsp;<i class="fa-solid fa-play" id="fa-solid-1"></i></a>
+               </div>
+          </div>
+     </section>
+     <section id="sec-2">
+          <div class="s2cont1">
+               <h1 class="s2item1-1">The Challenge</h1>
+               <p class="s2item1-2">Crop insurance under <em class="em1">Pradhan Mantri Fasal Bima Yojana (PMFBY) </em>
+                    faces critical challenges that <br> impact millions of Indian farmers. The current system struggles
+                    with manual verification delays, <br> assessment bias, and scalability issues across diverse
+                    agricultural regions. </p>
+               <div class="s2item1-3">
+                    <div class="s2item1-3-1">
+                         <div class="s2item1-3-1-1">
+                              <div class="s2item1-3-1-1-1"><i class="fa-solid fa-clock" id="fa-solid-2"></i></div>
+                              <div class="s2item1-3-1-1-2">
+                                   <h1 class="s2item1-3-1-1-2-1">Delayed Claims</h1>
+                                   <p class="s2item1-3-1-1-2-2">Manual verification takes weeks, leaving farmers in
+                                        financial distress</p>
+                              </div>
+                         </div>
+                         <div class="s2item1-3-1-2">
+                              <div class="s2item1-3-1-2-1"><i class="fa-solid fa-triangle-exclamation"
+                                        id="fa-solid-2"></i></div>
+                              <div class="s2item1-3-1-2-2">
+                                   <h1 class="s2item1-3-1-2-2-1">Lack of Transparency</h1>
+                                   <p class="s2item1-3-1-2-2-2">Opaque processes erode trust between farmers, insurers,
+                                        and government</p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="s2item1-3-2">
+                         <div class="s2item1-3-2-1">
+                              <div class="s2item1-3-2-1-1"><i class="fa-solid fa-user" id="fa-solid-2"></i></div>
+                              <div class="s2item1-3-2-1-2">
+                                   <h1 class="s2item1-3-2-1-2-1">Manual Bias</h1>
+                                   <p class="s2item1-3-2-1-2-2">Human assessment introduces inconsistency and potential
+                                        bias in damage evaluation</p>
+                              </div>
+                         </div>
+                         <div class="s2item1-3-2-2">
+                              <div class="s2item1-3-2-2-1"><i class="fa-solid fa-exclamation" id="fa-solid-24"></i>
+                              </div>
+                              <div class="s2item1-3-2-2-2">
+                                   <h1 class="s2item1-3-2-2-2-1">Limited Scalability</h1>
+                                   <p class="s2item1-3-2-2-2-2">Current methods cannot handle millions of claims across
+                                        diverse regions</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="s2item1-4">
+                    <span class="s2item1-4-1">
+                         <div class="s2item1-4-1-1"> <i class="fa-solid fa-circle-exclamation" id="fa-solid-3"></i>
+                         </div>
+                         <div class="s2item1-4-1-2">
+                              <h1 class="s2item1-4-1-2-1">CROPIC Initiative by Ministry of Agriculture & Farmers Welfare
+                              </h1>
+                              <p class="s2item1-4-1-2-2">The government launched the Crop Insurance using Remote
+                                   sensing, Smartphone & Artificial Intelligence <br> (CROPIC) initiative to modernize
+                                   crop insurance assessment.</p>
+                              <div class="s2item1-4-1-2-3">
+                                   <h3 class="s2item1-4-1-2-3-1">Goal:</h3>
+                                   <p class="s2item1-4-1-2-3-2">Enable real-time, geo-tagged crop image analysis using
+                                        AI/ML to provide fast, unbiased, and transparent <br> damage assessment for
+                                        insurance claims under PMFBY.</p>
+                              </div>
+                         </div>
+                    </span>
+               </div>
+          </div>
+     </section>
+     <section id="sec-3">
+          <div class="s3cont1">
+               <h1 class="s3item1-1">Our Prototype</h1>
+               <p class="s3item1-2">An end-to-end intelligent system combining cutting-edge AI with intuitive
+                    visualization</p>
+               <div class="s3item1-3">
+                    <div class="s3item1-3-1">
+                         <div class="s3item1-3-1-1">
+                              <div class="s3item1-3-1-1-1">
+                                   <div class="s3item1-3-1-1-1-1">
+                                        <i class="fa-solid fa-shield" id="fa-solid-4"></i>
+                                   </div>
+                                   <h1 class="s3item1-3-1-1-1-2">System Features</h1>
+                              </div>
+                              <div class="s3item1-3-1-1-2">
+                                   <div class="s3item1-3-1-1-2-1">
+                                        <i class="fa-solid fa-circle-check" id="fa-solid-5"></i>
+                                        <p class="s3item1-3-1-1-2-1-1">Farmer submission form with crop damage images
+                                             and metadata</p>
+                                   </div>
+                                   <div class="s3item1-3-1-1-2-1">
+                                        <i class="fa-solid fa-circle-check" id="fa-solid-5"></i>
+                                        <p class="s3item1-3-1-1-2-1-1">AI/ML model trained on 9 comprehensive damage
+                                             datasets</p>
+                                   </div>
+                                   <div class="s3item1-3-1-1-2-1">
+                                        <i class="fa-solid fa-circle-check" id="fa-solid-5"></i>
+                                        <p class="s3item1-3-1-1-2-1-1">Interactive map showing real-time damage
+                                             locations</p>
+                                   </div>
+                                   <div class="s3item1-3-1-1-2-1">
+                                        <i class="fa-solid fa-circle-check" id="fa-solid-5"></i>
+                                        <p class="s3item1-3-1-1-2-1-1">Damage type distribution with intuitive donut
+                                             charts</p>
+                                   </div>
+                                   <div class="s3item1-3-1-1-2-1">
+                                        <i class="fa-solid fa-circle-check" id="fa-solid-5"></i>
+                                        <p class="s3item1-3-1-1-2-1-1">Circular progress meters for damage %, confidence
+                                             & pest risk</p>
+                                   </div>
+                                   <div class="s3item1-3-1-1-2-1">
+                                        <i class="fa-solid fa-circle-check" id="fa-solid-5"></i>
+                                        <p class="s3item1-3-1-1-2-1-1">Bar charts analyzing yield loss, payout &
+                                             recovery time</p>
+                                   </div>
+                                   <div class="s3item1-3-1-1-2-1">
+                                        <i class="fa-solid fa-circle-check" id="fa-solid-5"></i>
+                                        <p class="s3item1-3-1-1-2-1-1">Heatmaps visualizing crop health, soil moisture &
+                                             pest likelihood</p>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="s3item1-3-1-2">
+                              <div class="s3item1-3-1-1-1">
+                                   <div class="s3item1-3-1-1-1-1">
+                                        <i class="fa-solid fa-database" id="fa-solid-4"></i>
+                                   </div>
+                                   <h1 class="s3item1-3-1-1-1-2">AI Training Datasets</h1>
+                              </div>
+                              <div class="s3item1-3-1-2-1">
+                                   <div class="s3item1-3-1-2-1-1">
+                                        <h1 class="s3item1-3-1-2-1-1-1">Flood Damage</h1>
+                                        <h1 class="s3item1-3-1-2-1-1-1">Drought Impact</h1>
+                                        <h1 class="s3item1-3-1-2-1-1-1">Wind Damage</h1>
+                                        <h1 class="s3item1-3-1-2-1-1-1">Disease Outbreak</h1>
+                                        <h1 class="s3item1-3-1-2-1-1-1">Wildlife Damage</h1>
+                                   </div>
+                                   <div class="s3item1-3-1-2-1-2">
+                                        <h1 class="s3item1-3-1-2-1-1-1">Pest Infestation</h1>
+                                        <h1 class="s3item1-3-1-2-1-1-1">Fire Damage</h1>
+                                        <h1 class="s3item1-3-1-2-1-1-1">Hail Damage</h1>
+                                        <h1 class="s3item1-3-1-2-1-1-1">Frost Damage</h1>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="s3item1-4">
+                    <div class="s3item1-4-1">
+                         <div class="s3item1-4-1-1">
+                              <div class="s3item1-4-1-1-1">
+                                   <i class="fa-solid fa-chart-line" id="fa-solid-6"></i>
+                              </div>
+                              <h1 class="s3item1-4-1-1-2">5-Visualization Dashboard</h1>
+                         </div>
+                         <div class="s3item1-4-1-2">
+                              <div class="s3item1-4-1-2-1">
+                                   <div class="s3item1-4-1-2-1-1">
+                                        <i class="fa-solid fa-location-dot" id="fa-solid-7"></i>
+                                        <label class="s3item1-4-1-2-1-1-1">Geographic Damage Map</label>
+                                        <p class="s3item1-4-1-2-1-1-2">Real-time location tracking</p>
+                                   </div>
+                                   <div class="s3item1-4-1-2-1-1">
+                                        <i class="fa-solid fa-database" id="fa-solid-7"></i>
+                                        <label class="s3item1-4-1-2-1-1-1">Financial Analysis</label>
+                                        <p class="s3item1-4-1-2-1-1-2">Yield loss & payout projection</p>
+                                   </div>
+                              </div>
+                              <div class="s3item1-4-1-2-1">
+                                   <div class="s3item1-4-1-2-1-1">
+                                        <i class="fa-solid fa-chart-line" id="fa-solid-7"></i>
+                                        <label class="s3item1-4-1-2-1-1-1">Damage Distribution</label>
+                                        <p class="s3item1-4-1-2-1-1-2">Type analysis with donut charts</p>
+                                   </div>
+                                   <div class="s3item1-4-1-2-1-1">
+                                        <i class="fa-solid fa-circle-check" id="fa-solid-7"></i>
+                                        <label class="s3item1-4-1-2-1-1-1">Health Heatmap</label>
+                                        <p class="s3item1-4-1-2-1-1-2">Crop health & soil conditions</p>
+                                   </div>
+                              </div>
+                              <div class="s3item1-4-1-2-1">
+                                   <div class="s3item1-4-1-2-1-1">
+                                        <i class="fa-solid fa-shield" id="fa-solid-7"></i>
+                                        <label class="s3item1-4-1-2-1-1-1">Risk Assessment</label>
+                                        <p class="s3item1-4-1-2-1-1-2">Damage %, confidence & pest risk</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="s3item1-5">
+                    <div class="s3item1-5-1">
+                         <p class="s3item1-5-1-1">
+                              Our system delivers real-time analysis with unbiased claim eligibility predictions, <br>
+                              ensuring fairness and transparency for every farmer.
+                         </p>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <section id="sec-4">
+          <div class="s4cont1">
+               <h1 class="s4item1-1">How It Works</h1>
+               <p class="s4item1-2">A seamless pipeline from data capture to actionable insights</p>
+               <div class="s4item1-3">
+                    <div class="s4item1-3-1">
+                         <div class="s4item1-3-1A">
+                              <div class="s4item1-3-1-1">
+                                   <div class="s4item1-3-1-1-1">
+                                        <i class="fa-solid fa-upload" id="fa-solid-8"></i>
+                                   </div>
+                                   <span class="s4item1-3-1-1-1-1">Image Upload & Geotagging</span>
+                              </div>
+                         </div>
+                         <div class="s4item1-3-1-2">
+                              <svg width="130" height="130">
+                                   <!-- Horizontal line -->
+                                   <line x1="10" y1="20" x2="100" y2="20" stroke="green" stroke-width="2"
+                                        stroke-dasharray="4" />
+
+                                   <!-- Curved corner -->
+                                   <path d="M100 20 Q120 20 120 40" fill="transparent" stroke="green" stroke-width="2"
+                                        stroke-dasharray="4" />
+
+                                   <!-- Vertical line -->
+                                   <line x1="120" y1="40" x2="120" y2="120" stroke="green" stroke-width="2"
+                                        stroke-dasharray="4" />
+
+                                   <!-- Bigger arrowhead at bottom -->
+                                   <polygon points="120,130 110,110 130,110" fill="green" />
+                              </svg>
+                         </div>
+                    </div>
+                    <div class="s4item1-3-2">
+                         <div class="s4item1-3-2-1">
+                              <svg width="130" height="130">
+                                   <!-- Horizontal line (leftward) -->
+                                   <line x1="120" y1="20" x2="30" y2="20" stroke="green" stroke-width="2"
+                                        stroke-dasharray="4" />
+
+                                   <!-- Curved corner (left to down) -->
+                                   <path d="M30 20 Q10 20 10 40" fill="transparent" stroke="green" stroke-width="2"
+                                        stroke-dasharray="4" />
+
+                                   <!-- Vertical line (downward) -->
+                                   <line x1="10" y1="40" x2="10" y2="120" stroke="green" stroke-width="2"
+                                        stroke-dasharray="4" />
+
+                                   <!-- Arrowhead at bottom -->
+                                   <polygon points="10,130 0,110 20,110" fill="green" />
+                              </svg>
+
+                         </div>
+                         <div class="s4item1-3-1A">
+                              <div class="s4item1-3-1-1">
+                                   <div class="s4item1-3-1-1-1">
+                                        <i class="fa-solid fa-gear" id="fa-solid-8"></i>
+                                   </div>
+                                   <span class="s4item1-3-1-1-1-1">Machine Learning Model</span>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="s4item1-3-3">
+                         <div class="s4item1-3-1A">
+                              <div class="s4item1-3-1-1">
+                                   <div class="s4item1-3-1-1-1">
+                                        <i class="fa-solid fa-cloud" id="fa-solid-8"></i>
+                                   </div>
+                                   <span class="s4item1-3-1-1-1-1">Weather & Satellite <br>Integration</span>
+                              </div>
+                         </div>
+                         <div class="s4item1-3-1-2">
+                              <svg width="130" height="130">
+                                   <!-- Horizontal line -->
+                                   <line x1="10" y1="20" x2="100" y2="20" stroke="green" stroke-width="2"
+                                        stroke-dasharray="4" />
+
+                                   <!-- Curved corner -->
+                                   <path d="M100 20 Q120 20 120 40" fill="transparent" stroke="green" stroke-width="2"
+                                        stroke-dasharray="4" />
+
+                                   <!-- Vertical line -->
+                                   <line x1="120" y1="40" x2="120" y2="120" stroke="green" stroke-width="2"
+                                        stroke-dasharray="4" />
+
+                                   <!-- Bigger arrowhead at bottom -->
+                                   <polygon points="120,130 110,110 130,110" fill="green" />
+                              </svg>
+                         </div>
+                    </div>
+                    <div class="s4item1-3-4">
+                         <div class="s4item1-3-4-A">
+                              <div class="s4item1-3-2-1W">
+                                   <svg width="140" height="130">
+                                        <!-- Horizontal line (leftward) -->
+                                        <line x1="120" y1="20" x2="30" y2="20" stroke="green" stroke-width="2"
+                                             stroke-dasharray="4" />
+
+                                        <!-- Curved corner (left to down) -->
+                                        <path d="M30 20 Q10 20 10 40" fill="transparent" stroke="green" stroke-width="2"
+                                             stroke-dasharray="4" />
+
+                                        <!-- Vertical line (downward) -->
+                                        <line x1="10" y1="40" x2="10" y2="120" stroke="green" stroke-width="2"
+                                             stroke-dasharray="4" />
+
+                                        <!-- Arrowhead at bottom -->
+                                        <polygon points="10,130 0,110 20,110" fill="green" />
+                                   </svg>
+                              </div>
+                              <div class="vv">
+                                   <div class="s4item1-3-1A">
+                                        <div class="s4item1-3-1-1">
+                                             <div class="s4item1-3-1-1-1">
+                                                  <i class="fa-solid fa-chart-pie" id="fa-solid-8"></i>
+                                             </div>
+                                             <span class="s4item1-3-1-1-1-1">Real-Time Dashboard</span>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="s4item1-3-4-B">
+                              <div class="s4item1-3-1A">
+                                   <div class="s4item1-3-1-1">
+                                        <div class="s4item1-3-1-1-1Z">
+                                             <i class="fa-solid fa-repeat" id="fa-solid-9"></i>
+                                        </div>
+                                        <div class="s4item1-3-1-1-11">
+                                             <span class="s4item1-3-1-1111">Error Handling</span>
+                                             <div class="s4SD">
+                                                  <p class="s4item1-3-1-111">Graceful fallback on model failure</p>
+                                                  <p class="s4item1-3-1-111">Retry logic for transient errors</p>
+                                                  <p class="s4item1-3-1-111">Validation before data processing</p>
+                                                  <p class="s4item1-3-1-111">Alert system for critical issues</p>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+     </section>
+     <section id="sec-5">
+          <div class="s5cont1">
+               <div class="s5item1-1">
+                    <h1 class="s5item1-1-1">Real-World Benefits</h1>
+               </div>
+               <h1 class="s5item1-2">Why It Matters</h1>
+               <p class="s5item1-3">Transforming crop insurance from a bureaucratic process into a farmer-friendly,
+                    technology-driven <br> safety net that truly serves India's agricultural community.</p>
+               <div class="s5item1-4">
+                    <div class="s5item1-4-1">
+                         <div class="s5item1-4C-1">
+                              <div class="s5item1-4C-1-1">
+                                   <i class="fa-solid fa-bolt" id="fa-solid-10"></i>
+                              </div>
+                              <h1 class="s5item1-4C-1-2">Faster Claims Processing</h1>
+                              <p class="s5item1-4C-1-3">Reduces claim settlement <br>time from weeks to hours,<br>
+                                   providing immediate
+                                   relief <br>to affected farmers</p>
+                              <div class="s5item1-4C-1-4">
+                                   <span class="s5item1-4C-1-4-1">90<em class="s5item1-4C-1-4-1-1">%</em></span>
+                                   <span class="s5item1-4C-1-4-2">Time Saved</span>
+                              </div>
+                         </div>
+                         <div class="s5item1-4C-1">
+                              <div class="s5item1-4C-1-1">
+                                   <i class="fa-solid fa-user-plus" id="fa-solid-10"></i>
+                              </div>
+                              <h1 class="s5item1-4C-1-2">Farmer & Official Trust</h1>
+                              <p class="s5item1-4C-1-3">Transparent process with <br>detailed reports builds <br>
+                                   confidence among
+                                   farmers,<br>
+                                   insurers, and government bodies</p>
+                              <div class="s5item1-4C-1-4">
+                                   <span class="s5item1-4C-1-4-1">100<em class="s5item1-4C-1-4-1-1">%</em></span>
+                                   <span class="s5item1-4C-1-4-2">
+                                        Transparency</span>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="s5item1-4-1">
+                         <div class="s5item1-4C-1">
+                              <div class="s5item1-4C-1-1">
+                                   <i class="fa-solid fa-shield" id="fa-solid-10"></i>
+                              </div>
+                              <h1 class="s5item1-4C-1-2">Reduced Bias & Fraud</h1>
+                              <p class="s5item1-4C-1-3">AI-powered assessment eliminates <br>human bias and detects
+                                   fraudulent <br>claims
+                                   through cross-validation</p>
+                              <div class="s5item1-4C-1-4">
+                                   <span class="s5item1-4C-1-4-1">99<em class="s5item1-4C-1-4-1-1">%</em></span>
+                                   <span class="s5item1-4C-1-4-2">
+                                        Accuracy</span>
+                              </div>
+                         </div>
+                         <div class="s5item1-4C-1">
+                              <div class="s5item1-4C-1-1">
+                                   <i class="fa-solid fa-bullseye" id="fa-solid-10"></i>
+                              </div>
+                              <h1 class="s5item1-4C-1-2">YESTECH Integration</h1>
+                              <p class="s5item1-4C-1-3">Seamless integration with <br>yield estimation systems for <br>
+                                   comprehensive crop
+                                   insurance management</p>
+                              <div class="s5item1-4C-1-4">
+                                   <span class="s5item1-4C-1-4-1">Real-time</span>
+                                   <span class="s5item1-4C-1-4-2">Sync</span>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="s5item1-4-1">
+                         <div class="s5item1-4C-1">
+                              <div class="s5item1-4C-1-1">
+                                   <i class="fa-solid fa-globe" id="fa-solid-10"></i>
+                              </div>
+                              <h1 class="s5item1-4C-1-2">National Scalability</h1>
+                              <p class="s5item1-4C-1-3">Cloud-based architecture can <br> handle millions of
+                                   simultaneous <br> claims
+                                   across all Indian states</p>
+                              <div class="s5item1-4C-1-4">
+                                   <span class="s5item1-4C-1-4-1">100M<em class="s5item1-4C-1-4-1-1">+</em></span>
+                                   <span class="s5item1-4C-1-4-2">
+                                        Claims/Year</span>
+                              </div>
+                         </div>
+                         <div class="s5item1-4C-1">
+                              <div class="s5item1-4C-1-1">
+                                   <i class="fa-solid fa-arrow-trend-up" id="fa-solid-10"></i>
+                              </div>
+                              <h1 class="s5item1-4C-1-2">Economic Impact</h1>
+                              <p class="s5item1-4C-1-3">Faster payouts improve <br>farmer cash flow, enabling <br>
+                                   quicker recovery and
+                                   <br> next season preparation
+                              </p>
+                              <div class="s5item1-4C-1-4">
+                                   <span class="s5item1-4C-1-4-1">₹1000Cr<em class="s5item1-4C-1-4-1-1">+</em></span>
+                                   <span class="s5item1-4C-1-4-2">Annual Impact</span>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="s5item1-5">
+                    <div class="s5item1-5-1">
+                         <span class="s5item1-5-1-1"> Supporting India's Agricultural Vision</span>
+                         <div class="s5item1-5-1-2">
+                              <div class="s5item1-5-1-2-1">
+                                   <span class="s5item1-5-1-2-1-1">14 Crore+</span>
+                                   <p class="s5item1-5-1-2-1-2">Farmers Enrolled in PMFBY</p>
+                              </div>
+                              <div class="s5item1-5-1-2-1">
+                                   <span class="s5item1-5-1-2-1-1e">₹1.5 Lakh Cr+</span>
+                                   <p class="s5item1-5-1-2-1-2">Annual Insurance Premium</p>
+                              </div>
+                              <div class="s5item1-5-1-2-1">
+                                   <span class="s5item1-5-1-2-1-1">All States</span>
+                                   <p class="s5item1-5-1-2-1-2">Pan-India Coverage</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+     </section>
+
+     <section id="sec-6">
+          <div class="s6cont1">
+               <div class="s6item1-1">
+                    <h1 class="s6item1-1-1">Interactive Demo</h1>
+               </div>
+               <h1 class="s6item1-2">Try It Yourself</h1>
+               <p class="s6item1-3">Experience our AI-powered crop damage analysis system in action. Submit real crop
+                    damage
+                    <br>images and see instant AI analysis with comprehensive visualizations.
+               </p>
+               <div class="s6item1-4">
+                    <!--  -->
+                    <div class="s6item1-4-1">
+                         <div class="s6item1-4-1-1">
+                              <h1 class="s6item1-4-1-1-1">Live Prototype Available</h1>
+                         </div>
+                         <h1 class="s6item1-4-1-2">Complete End-to-End System</h1>
+                         <p class="s6item1-4-1-3">Our working prototype includes a farmer submission form, AI analysis
+                              engine, and a
+                              <br>comprehensive dashboard with 5 real-time visualizations.
+                         </p>
+                         <div class="s6item1-4-1-4">
+                              <div class="s6item1-4-1-4-1">
+                                   <div class="s6item1-4-1-4-1-1">
+                                        <div class="s6item1-4-1-4-1-1-1">
+                                             <span class="s6item1-4-1-4-1-1-1-1">1</span>
+                                        </div>
+                                        <span class="s6item1-4-1-4-1-1-2">Submit Crop Images</span>
+                                   </div>
+                                   <div class="s6item1-4-1-4-1-2">
+                                        <p class="s6item1-4-1-4-1-2-1">• Upload damage photos</p>
+                                        <p class="s6item1-4-1-4-1-2-1">• Auto GPS tagging</p>
+                                        <p class="s6item1-4-1-4-1-2-1">• Add crop details</p>
+                                        <p class="s6item1-4-1-4-1-2-1">• Instant validation</p>
+                                   </div>
+                              </div>
+                              <div class="s6item1-4-1-4-1">
+                                   <div class="s6item1-4-1-4-1-1">
+                                        <div class="s6item1-4-1-4-1-1-1">
+                                             <span class="s6item1-4-1-4-1-1-1-1Q">2</span>
+                                        </div>
+                                        <span class="s6item1-4-1-4-1-1-2">View AI Analysis</span>
+                                   </div>
+                                   <div class="s6item1-4-1-4-1-2">
+                                        <p class="s6item1-4-1-4-1-2-1">• Damage classification</p>
+                                        <p class="s6item1-4-1-4-1-2-1">• Interactive map view</p>
+                                        <p class="s6item1-4-1-4-1-2-1">• Confidence metrics</p>
+                                        <p class="s6item1-4-1-4-1-2-1">• Claim eligibility</p>
+                                   </div>
+                              </div>
+
+                         </div>
+                         <div class="s6item1-4-1-5">
+                              <a class="s6item1-4-1-5-1">Launch Live Demo</a>
+                         </div>
+                         <p class="s6item1-4-1-6">Full functionality with real AI model inference and data visualization
+                         </p>
+                    </div>
+                    <!--  -->
+                    <div class="s6item1-4-2" style="display: none;">
+                         <div class="s6item1-4-2-1">
+                              <div class="s6item1-4-2-1-1">
+                                   <i class="fa-solid fa-arrow-left" id="fa-solid-13"></i>
+                              </div>
+                              <h1 class="s6item1-4-2-1-2"> Crop Damage Claim Portal </h1>
+                         </div>
+                         <form id="claimForm" enctype="multipart/form-data">
+                              <div class="form-section">
+                                   <label class="form-section1">Farmer Name:</label>
+                                   <input type="text" class="form-section4" name="farmerName" required />
+
+                                   <label class="form-section1">Crop Type:</label>
+                                   <input type="text" class="form-section4" name="cropType" required />
+
+                                   <label class="form-section1">Latitude:</label>
+                                   <input type="number" class="form-section4" step="0.0001" name="latitude" required />
+
+                                   <label class="form-section1">Longitude:</label>
+                                   <input type="number" class="form-section4" step="0.0001" name="longitude" required />
+
+                                   <label class="form-section1">Location:</label>
+                                   <input type="text" class="form-section4" name="location" required />
+
+                                   <label class="form-section1">Upload Images:</label>
+                                   <input type="file" name="images" multiple accept="image/*" required />
+
+                                   <label class="form-section1">Damage Type:</label>
+                                   <select name="damageType" required class="form-section4">
+                                        <option value="Cyclone_Storm Damage">Cyclone / Storm</option>
+                                        <option value="Drought_Water Stress">Drought / Water Stress</option>
+                                        <option value="Earthquake">Earthquake</option>
+                                        <option value="Fire Damage (Forest Fire)">Fire Damage</option>
+                                        <option value="Flood_Inundation">Flood / Inundation</option>
+                                        <option value="Heatwave">Heatwave</option>
+                                        <option value="Landslide">Landslide</option>
+                                        <option value="PlantVillage Dataset">Pesticides / Other</option>
+                                   </select>
+
+                                   <label class="form-section1">Crop Growth Stage:</label>
+                                   <select name="growthStage" required class="form-section4">
+                                        <option value="Small">Small</option>
+                                        <option value="Mid">Mid</option>
+                                        <option value="High">High</option>
+                                   </select>
+                                   <div class="form-section2">
+                                        <button type="submit" class="form-section3">Submit Claim</button>
+                                   </div>
+                              </div>
+                         </form>
+                    </div>
+               </div>
+               <!--  -->
+               <div id="load" style="display: none">
+                    <div class="s6item1-6">
+                         <h1 class="s6item1-6-1">Claim Summary </h1>
+                         <div class="s6item1-6-2">
+                              <div class="s6item1-6-2-1">
+                                   <div class="s61">
+                                        <div class="s61-1">
+                                             <label class="s61-1-1">Farmer Name:</label>
+                                             <div id="farmerName"></div>
+                                        </div>
+                                        <div class="s61-1">
+                                             <label class="s61-1-1">Crop Type:</label>
+                                             <div id="cropType"></div>
+                                        </div>
+                                        <div class="s61-1">
+                                             <label class="s61-1-1">Latitude:</label>
+                                             <div id="latitude"></div>
+                                        </div>
+                                        <div class="s61-1">
+                                             <label class="s61-1-1">Longitude:</label>
+                                             <div id="longitude"></div>
+                                        </div>
+                                        <div class="s61-1">
+                                             <label class="s61-1-1">Damage Type:</label>
+                                             <div id="damageType"></div>
+                                        </div>
+                                        <div class="s61-1">
+                                             <label class="s61-1-1">Crop Growth <br> Stage:</label>
+                                             <div id="growthStage"></div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="s6item1-6-2-2">
+                                   <div id="map" class="viz-box"></div>
+                              </div>
+                         </div>
+                         <div class="s6item1-6-3">
+                              <div class="s6item1-6-3-1">
+                                   <div class="s6item1-6-3-1-1">
+                                        <div id="chartContainer">
+                                             <canvas id="barChart"></canvas>
+                                        </div>
+                                   </div>
+                                   <div class="s6item1-6-3-1-2">
+                                        <div class="meter-container">
+                                             <div class="meter" id="m1" data-tip="Based on % of field area damaged">
+                                                  <div class="meter-inner" id="t1">0%</div>
+                                             </div>
+                                             <div class="meter-label">Damage Probability</div>
+
+                                             <div class="meter" id="m2"
+                                                  data-tip="Low confidence suggests manual review">
+                                                  <div class="meter-inner" id="t2">0%</div>
+                                             </div>
+                                             <div class="meter-label">Model Confidence</div>
+
+                                             <div class="meter" id="m3"
+                                                  data-tip="Risk based on detected infestation patterns">
+                                                  <div class="meter-inner" id="t3">0%</div>
+                                             </div>
+                                             <div class="meter-label">Pest Infestation</div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="s6item1-6-3-2">
+                                   <div class="s6item1-6-3-2-1">
+                                        <div class="chart-container">
+                                             <canvas id="damageChart"></canvas>
+                                             <div id="innerLabel"></div>
+                                        </div>
+                                   </div>
+                                   <div class="s6item1-6-3-2-2">
+                                        <div id="grid" class="heatmap-grid"></div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="s6item1-6-4">
+                              <div id="建议"></div>
+                         </div>
+                    </div>
+               </div>
+               <!--  -->
+               <div class="s6item1-5">
+                    <p class="s6item1-5-1"><em class="s6item1-5-1-1">Note:</em> This is a prototype developed for Smart
+                         India Hackathon 2025. The AI model has been trained on diverse Indian crop damage datasets for
+                         accurate <br> classification.</p>
+               </div>
+          </div>
+     </section>
+     <section id="sec-7">
+          <div class="s7cont1">
+               <div class="s7item1-1">
+                    <div class="s7item1-1-1">
+                         <div class="s7item1-1-1-1">
+                              <i class="fa-solid fa-award" id="fa-solid-11"></i>
+                              <span class="s7item1-1-1-1-1"> CROPIC Prototype</span>
+                         </div>
+                         <p class="s7item1-1-1-2">AI-powered crop damage analytics for transparent and efficient crop
+                              insurance under
+                              PMFBY.</p>
+                    </div>
+                    <div class="s7item1-1-2">
+                         <span class="s7item1-1-2-1">Built For</span>
+                         <span class="s7item1-1-2-2">Smart India Hackathon 2025</span>
+                         <p class="s7item1-1-2-3">Problem Statement: AI-based Real-Time Crop Image Analytics</p>
+                    </div>
+                    <div class="s7item1-1-3">
+                         <span class="s7item1-1-3-1">Connect</span>
+                         <div class="s7item1-1-3-2">
+                              <i class="fa-brands fa-github" id="fa-solid-12"></i>
+                              <span class="s7item1-1-3-2-1">
+                                   View on GitHub</span>
+                         </div>
+                         <div class="s7item1-1-3-3">
+                              <i class="fa-regular fa-envelope" id="fa-solid-12"></i>
+                              <span class="s7item1-1-3-3-1"> team@cropic.in</span>
+                         </div>
+                    </div>
+               </div>
+               <hr class="s7item1-5">
+               <div class="s7item1-2">
+                    <div class="s7item1-2-1">
+                         <span class="s7item1-2-1-1 s7item1-2C">Supported by</span>
+                         <span class="s7item1-2-1-2 s7item1-2C">Ministry of Agriculture & Farmers Welfare</span>
+                    </div>
+                    <div class="s7item1-2-2">
+                         <span class="s7item1-2-2-1 s7item1-2C">Under</span>
+                         <span class="s7item1-2-2-2 s7item1-2C">PMFBY Scheme</span>
+                    </div>
+                    <div class="s7item1-2-3">
+                         <span class="s7item1-2-3-1 s7item1-2C">Initiative</span>
+                         <span class="s7item1-2-3-2 s7item1-2C">CROPIC</span>
+                    </div>
+               </div>
+               <p class="s7item1-3">© 2025 CROPIC Prototype. Built for Smart India Hackathon 2025.</p>
+               <p class="s7item1-4">Empowering farmers through technology and innovation</p>
+          </div>
+     </section>
+     <div id="loadingOverlay" style="display: none">
+        <div class="spinner"></div>
+      </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
